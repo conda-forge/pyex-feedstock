@@ -5,9 +5,11 @@ Home: http://github.com/timkpaine/pyEX
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyex-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python interface to IEX and IEX cloud APIs
+
+Development: https://github.com/timkpaine/pyEX
 
 Python interface to IEX and IEX cloud APIs
 
