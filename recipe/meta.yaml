@@ -1,5 +1,5 @@
 {% set name = "pyEX" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 57d68050e9dd1db21aad5053d47fa29145e3de001f681d69e483e3b454f8aac7
+  sha256: 0e287a8739f4091adb22c239ae0060098d9d5ca58290287114bc5bfb4f582ebe
 
 build:
   number: 0
@@ -20,19 +20,23 @@ requirements:
     - pip
   run:
     - python >=3.7
+    - aiohttp >=3.2
+    - aiohttp-sse-client >=0.2.0
     - deprecation >=2.0.6
     - ipython >=7.2.0
-    - Pillow >=5.3.0
+    - pillow >=5.3.0
     - pandas >=0.22
     - pytz >=2019.1
     - requests >=2.21.0
-    - socketIO-client-nexus >=0.7.6
+    - six
+    - socketio-client-nexus >=0.7.6
     - sseclient >=0.0.22
     - temporal-cache >=0.1.1
 
 test:
   imports:
     - pyEX
+    - pyEX.client
 
 about:
   home: http://github.com/timkpaine/pyEX
