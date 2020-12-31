@@ -1,5 +1,5 @@
 {% set name = "pyEX" %}
-{% set version = "0.2.11" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5cb08b7a7689e536c3a1eb80e8bf2404b371587c735aada066079c354a8c758b
+  sha256: 8d4cadec12de521924e7b3609ad2c31bebc0910696cda2a796e5e6ff8c963d9d
 
 build:
   number: 0
