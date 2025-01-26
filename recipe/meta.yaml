@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools <69
   run:
     - python >={{ python_min }}
     - aiohttp >=3.2
@@ -46,9 +47,7 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: Python interface to IEX and IEX cloud APIs
-
-  description: |
-    Python interface to IEX and IEX cloud APIs
+  description: Python interface to IEX and IEX cloud APIs
   dev_url: https://github.com/timkpaine/pyEX
 
 extra:
