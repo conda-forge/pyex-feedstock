@@ -18,7 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools <67
+    - setuptools <66
   run:
     - python >={{ python_min }}
     - aiohttp >=3.2
